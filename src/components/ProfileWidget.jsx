@@ -71,7 +71,7 @@ export default function ProfileWidgets() {
                 onClick={() => setActiveTab(tab)}
                 className={`flex-1 text-sm md:text-base py-2 rounded-full hover:bg-[#262631e6] border-black transition-all duration-200 ${
                   activeTab === tab
-                    ? "bg-[#262631e6] shadow-xl shadow-black text-white "
+                    ? "bg-[#262631e6] shadow-lg shadow-black text-white "
                     : "text-gray-400 hover:text-white"
                 }`}
               >
