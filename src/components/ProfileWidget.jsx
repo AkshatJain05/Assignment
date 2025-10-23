@@ -63,13 +63,13 @@ export default function ProfileWidgets() {
       {/* Right Section */}
       <div className="w-[45%] flex flex-col gap-6">
         {/* Tabs Widget */}
-        <div className="bg-[#1a222b] rounded-2xl shadow-lg p-6">
-          <div className="flex space-x-4 bg-[#171717] rounded-full p-1 mb-4">
+        <div className="bg-[#1a222b] rounded-3xl shadow-xl p-6">
+          <div className="flex space-x-4 bg-[#0e0e0e] rounded-2xl p-1 mb-4">
             {["about", "experiences", "recommended"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`flex-1 text-sm md:text-base py-2 rounded-full hover:bg-[#262631e6] border-black transition-all duration-200 ${
+                className={`flex-1 text-sm md:text-base py-2 rounded-2xl hover:bg-[#262631e6] border-black transition-all duration-200 ${
                   activeTab === tab
                     ? "bg-[#262631e6] shadow-lg shadow-black text-white "
                     : "text-gray-400 hover:text-white"
@@ -86,9 +86,9 @@ export default function ProfileWidgets() {
         </div>
 
         {/* Gallery Widget */}
-        <div className="bg-[#1a222b] rounded-2xl shadow-lg p-6">
+        <div className="bg-[#1a222b] rounded-3xl shadow-lg p-6">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold bg-[#171717] py-3 px-5 rounded-2xl">
+            <h2 className="text-lg font-semibold bg-[#0e0e0e] py-3 px-5 rounded-2xl">
               Gallery
             </h2>
             <div className="flex items-center gap-3">
